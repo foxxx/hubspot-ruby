@@ -4,7 +4,7 @@ module Hubspot
 
     def initialize(response, message=nil)
       message += "\n" if message
-      me = super("#{message}Response body: #{response.body}",)
+      me = super("#{message}Response body: #{response.body}")
       me.response = response
       return me
     end
